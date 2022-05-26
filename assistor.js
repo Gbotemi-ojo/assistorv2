@@ -1,5 +1,6 @@
 let firststake = document.getElementById("firstStake")
 let secondstake = document.getElementById("secondStake")
+let total = document.getElementById("total")
 let firstquestion = prompt("1 for firstlife 2 for secondlife")
 if(firstquestion === "1"){
 let firstRequest = Number(prompt("enter account balance"))
@@ -10,6 +11,7 @@ let thirdRequest = result2 / secondRequest
 let fourtRequest = result - thirdRequest
 firststake.textContent = "STAKE1 = "+ thirdRequest 
 secondstake.textContent = "STAKE2 ="+ fourtRequest
+total.textContent += thirdRequest + fourtRequest
 }
 else if(firstquestion === "2"){
 let saverequest =  Number(prompt("enter previous stake amount"))
